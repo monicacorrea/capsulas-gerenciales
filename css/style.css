@@ -1,0 +1,167 @@
+body {
+  background-color: rgba(247, 247, 247, 0.801);
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {}
+
+
+/* background color navegador */
+
+.topnav {
+  background-color: 333;
+  overflow: hidden;
+}
+
+
+/* links dentro del navigation bar */
+
+.topnav a {
+  float: left;
+  color: #474545;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+
+/* Color de links en hover */
+
+.topnav a:hover {
+  background-color: #444;
+  color: rgb(255, 255, 255);
+}
+
+
+/* Color del active/current link */
+
+.topnav a.active {
+  background-color: #f15623;
+  color: white;
+}
+
+
+/* slider */
+
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: cambio 10s infinite;
+  animation-direction: alternate;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 80%;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form label {
+  display: block;
+  margin: 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea.form-control {
+  padding: 7px 1px;
+  margin-bottom: 8px;
+  width: 25%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea.form-control {
+  width: 50%
+}
+
+aside {
+  width: 20%;
+  padding-left: 5px;
+  margin-left: 5px;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+.encabezado-tres {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: rgb(235, 240, 235);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: rgb(44, 2, 2);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+input {
+  padding: 5px
+}
+
+.submit {
+  background: #f15623;
+  border-color: transparent;
+  color: #111111;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 45px;
+  margin-top: 20px;
+}
+
+.submit:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
